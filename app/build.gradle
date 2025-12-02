@@ -1,0 +1,80 @@
+plugins {
+    id 'com.android.application'
+}
+
+import java.text.SimpleDateFormat
+
+def buildTime = new Date()
+def versionCodeInt = new SimpleDateFormat("yyMMddHH").format(buildTime).toInteger() // contoh: 25082214
+def versionNameStr = "1.0.7." + new SimpleDateFormat("yyyyMMdd_HHmm").format(buildTime) // versi lama: 1.0.6.20250822
+
+android {
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            if (variant.buildType.name == "release") {
+                // Custom nama file APK pakai versionName
+                outputFileName = "E-Report_QCPP_${variant.versionName}_${variant.buildType.name}.apk"
+            }
+        }
+    }
+
+    namespace 'com.ggf.qcpp'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.ggf.qcpp"
+        minSdk 27
+        targetSdk 34
+
+        versionCode versionCodeInt
+        versionName versionNameStr
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    // buildTypes {
+    //     release {
+    //         minifyEnabled false
+    //         proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    //         signingConfig signingConfigs.debug
+    //     }
+    // }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    buildFeatures {
+        viewBinding false
+    }
+}
+
+//repositories {
+//    flatDir {
+//        dirs 'libs'
+//    }
+//}
+
+dependencies {
+    implementation files('libs/tray-0.12.0.aar')
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment:2.7.7'
+    implementation 'androidx.navigation:navigation-ui:2.7.7'
+    implementation 'androidx.activity:activity:1.9.0'
+
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation "com.jakewharton:butterknife:10.2.3"
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation 'com.github.thomper:sweet-alert-dialog:v1.4.0'
+    implementation "cn.pedant.sweetalert:library:1.3"
+    implementation files('libs/jackson-databind-2.0.0.jar')
+    annotationProcessor "com.jakewharton:butterknife-compiler:10.2.3"
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

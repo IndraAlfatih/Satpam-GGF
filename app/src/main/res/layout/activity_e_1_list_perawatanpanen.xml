@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgorange3"
+    tools:context=".e_formpengamatan.e_1_formpengamatan_list.e_1_list_perawatanpanen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bgcoba"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="8dp"
+                android:text="Form Pengolahan\nPerawatan &amp; Panen "
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/mregular"
+                android:text="Data yang Cepat, Tepat, Akurat"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text1"
+                tools:ignore="MissingConstraints" />
+
+            <!-- Dropdown -->
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_layout_white_2"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text2"
+                tools:ignore="MissingConstraints">
+
+                <!-- Dropdown tahun dan bulan -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Aktivitas"
+                        android:textSize="14sp"
+                        android:paddingStart="12dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/blackSecondary"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Pilih aktivitas sesuai spesialisasi   "
+                        android:textSize="14sp"
+                        android:paddingStart="12dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/liner2"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_below="@+id/linier1"
+                        android:background="@drawable/bg_background4"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+                <!-- _______________________________________________________________________________ -->
+
+                <LinearLayout
+                    android:id="@+id/gudangmixer"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="@integer/material_motion_duration_long_2"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/gudangmixer"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="2"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Gudang Mixer"
+                            android:textSize="14sp"
+                            android:paddingStart="12dp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="@color/blackSecondary"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Porses pencampuran bahan pupuk atau obar"
+                            android:textSize="12sp"
+                            android:paddingStart="12dp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:textColor="@color/blackSecondary"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/adukanbahan"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="@integer/material_motion_duration_long_2"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/adukanbahan"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="2"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Adukan Bahan di Lokasi"
+                            android:textSize="14sp"
+                            android:paddingStart="12dp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="@color/blackSecondary"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Proses mencampur bahan langsung di area kerja/lokasi"
+                            android:textSize="12sp"
+                            android:paddingStart="12dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/blackSecondary"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/boomspray"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginStart="12dp"-->
+<!--                    android:layout_marginEnd="12dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:weightSum="@integer/material_motion_duration_long_2"-->
+<!--                    >-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/boom"-->
+<!--                        />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:weightSum="2"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:text="Aplikasi Boom Spray"-->
+<!--                            android:textSize="14sp"-->
+<!--                            android:paddingStart="12dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textColor="@color/blackSecondary"-->
+<!--                            />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:text="Pastikan pengamatan yang dipilih benar"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:paddingStart="12dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:textColor="@color/blackSecondary"-->
+<!--                            />-->
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/kebersihanpanen"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="@integer/material_motion_duration_long_2"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/panen"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="2"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Kebersihan Panen"
+                            android:textSize="14sp"
+                            android:paddingStart="12dp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="@color/blackSecondary"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Pemeriksaan agar hasil panen tidak ada yang tertinggal"
+                            android:textSize="12sp"
+                            android:paddingStart="12dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/blackSecondary"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- _______________________________________________________________________________ -->
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

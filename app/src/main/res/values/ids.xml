@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="hasiltotalbjksingkong" type="id" />
+    <item name="mTanggalHistory" type="id" />
+    <item name="layoutUploadImage" type="id" />
+    <item name="uploadBox" type="id" />
+    <item name="stateBefore" type="id" />
+    <item name="stateUploading" type="id" />
+    <item name="progressBar" type="id" />
+    <item name="txtProgress" type="id" />
+    <item name="stateComplete" type="id" />
+    <item name="fileName" type="id" />
+    <item name="clearUpload" type="id" />
+</resources>

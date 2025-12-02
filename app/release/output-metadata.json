@@ -1,0 +1,37 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.ggf.qcpp",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 25102813,
+      "versionName": "1.0.7.20251028_1348",
+      "outputFile": "E-Report_QCPP_1.0.7.20251028_1348_release.apk"
+    }
+  ],
+  "elementType": "File",
+  "baselineProfiles": [
+    {
+      "minApi": 28,
+      "maxApi": 30,
+      "baselineProfiles": [
+        "baselineProfiles/1/E-Report_QCPP_1.0.7.20251028_1348_release.dm"
+      ]
+    },
+    {
+      "minApi": 31,
+      "maxApi": 2147483647,
+      "baselineProfiles": [
+        "baselineProfiles/0/E-Report_QCPP_1.0.7.20251028_1348_release.dm"
+      ]
+    }
+  ],
+  "minSdkVersionForDexing": 27
+}

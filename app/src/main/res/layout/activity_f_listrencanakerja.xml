@@ -1,0 +1,2015 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF1F8"
+    tools:ignore="DuplicateIds"
+    tools:context=".f_rencanakerja.f_listrencanakerja">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:orientation="vertical">
+oy
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:background="@drawable/bg_gradient_primary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@drawable/background_batik2"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/mregular"
+                android:text="Perintah Kerja"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/mregular"
+                android:text="Isi dengan jujur untuk mendapat  \nData yang Akurat!"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text1"
+                tools:ignore="MissingConstraints" />
+
+            <!-- Dropdown -->
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_layout_white_2"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text2"
+                tools:ignore="MissingConstraints">
+
+                <!-- Dropdown tahun dan bulan -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="SPK No. "
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mNoSpk"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SPK006329499"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- _______________________________________________________________________________ -->
+
+                <!-- Dropdown tahun dan bulan -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Tanggal: "
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Selasa, 17.06.2024, Shift: Pagi"                          android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- _______________________________________________________________________________ -->
+
+                <!-- Dropdown tahun dan bulan -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Ka. Bag: "
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mKabag"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Sri Untor"                          android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- _______________________________________________________________________________ -->
+
+                <!-- Dropdown tahun dan bulan -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Ka. Sie: "
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mKasie"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Rizky Kienzle Oktavius"                          android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- _______________________________________________________________________________ -->
+
+                <!-- Dropdown tahun dan bulan -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Mandor: "
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mMandor"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Dicky Ari Kurniawan"                          android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- _______________________________________________________________________________ -->
+
+                <!-- Dropdown tahun dan bulan -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Pekerjaan yang ditugaskan"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <!-- _______________________________________________________________________________ -->
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Dropdown -->
+                        <LinearLayout
+                            android:id="@+id/chopper"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_layout_abu_3"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            tools:ignore="MissingConstraints">
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/mNoline"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="1"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text=". LOKASI : "
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                     <TextView
+                                        android:id="@+id/mLokasi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="153E (6.39 Ha)"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Pengamatan Kualitas"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:id="@+id/mKategori"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Chopper"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Target Hasil (Ha): "
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/mLuasNetto"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="514"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+
+                        </LinearLayout>
+                        <!-- _______________________________________________________________________________ -->
+
+                        <!-- Dropdown -->
+                        <LinearLayout
+                            android:id="@+id/bajak"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_layout_abu_3"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            tools:ignore="MissingConstraints">
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="1. LOKASI : "
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="153E (6.39 Ha)"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Pengamatan kualitas Bajak"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Target Hasil (Ha): "
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bajakSingkong"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_layout_abu_3"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            tools:ignore="MissingConstraints">
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="1. LOKASI : "
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="153E (6.39 Ha)"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Pengamatan kualitas Bajak Singkong"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Target Hasil (Ha): "
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+
+                        </LinearLayout>
+                        <!-- _______________________________________________________________________________ -->
+                        <LinearLayout
+                            android:id="@+id/finishing"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_layout_abu_3"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            tools:ignore="MissingConstraints">
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="3. LOKASI : 153E (6.39 Ha)"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Pengamatan Finishing"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Target Hasil: 514 Ha"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+
+                        </LinearLayout>
+                        <!-- Dropdown -->
+
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:id="@+id/petikBibit"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_layout_abu_3"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            tools:ignore="MissingConstraints">
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="3. LOKASI : 153E (6.39 Ha)"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Pengamatan Petik Bibit"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Target Hasil: 514 Ha"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+
+                        </LinearLayout>
+
+
+                        <!-- _______________________________________________________________________________ -->
+
+                        <!-- Dropdown -->
+                        <LinearLayout
+                            android:id="@+id/ridger"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_layout_abu_3"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            tools:ignore="MissingConstraints">
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="1"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text=". LOKASI : "
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:id="@+id/mLokasi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="153E (6.39 Ha)"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Pengamatan Kualitas"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Ridger"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Target Hasil (Ha): "
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/mLuasNetto"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="514"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/pHTanah"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_layout_abu_3"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            tools:ignore="MissingConstraints">
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="1"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text=". LOKASI : "
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:id="@+id/mLokasi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="153E (6.39 Ha)"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Pengamatan "
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="pH Tanah"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Target Hasil (Ha): "
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/mLuasNetto"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="514"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/JalanSaluran"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_layout_abu_3"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            tools:ignore="MissingConstraints">
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="1"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text=". LOKASI : "
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:id="@+id/mLokasi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="153E (6.39 Ha)"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Pengamatan"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Jalan Saluran"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Target Hasil (Ha): "
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/mLuasNetto"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="514"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/kebersihanbonggol"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_layout_abu_3"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            tools:ignore="MissingConstraints">
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="1"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text=". LOKASI : "
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:id="@+id/mLokasi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="153E (6.39 Ha)"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Pengamatan"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text=" Kebersihan Bonggol"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Target Hasil (Ha): "
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/mLuasNetto"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="514"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+
+                        </LinearLayout>
+                        <!-- _______________________________________________________________________________ -->
+
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:id="@+id/poolDipping"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_layout_abu_3"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            tools:ignore="MissingConstraints">
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="3. LOKASI : 153E (6.39 Ha)"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Pengamatan Pool Dipping"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Target Hasil: 514 Ha"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:id="@+id/agregat"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_layout_abu_3"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            tools:ignore="MissingConstraints">
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="3. LOKASI : 153E (6.39 Ha)"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Pengamatan kualitas Agregat"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Target Hasil: 514 Ha"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:id="@+id/mDropBibit"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_layout_abu_3"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            tools:ignore="MissingConstraints">
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="3. LOKASI : 153E (6.39 Ha)"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Pengamatan Drop Bibit"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Target Hasil: 514 Ha"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:id="@+id/mTransport"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_layout_abu_3"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            tools:ignore="MissingConstraints">
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="3. LOKASI : 153E (6.39 Ha)"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Pengamatan Kebersihan Transport"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+                            <!-- Dropdown tahun dan bulan -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Target Hasil: 514 Ha"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/black"
+                                        android:gravity="center_vertical"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <!-- _______________________________________________________________________________ -->
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+            <!-- _______________________________________________________________________________ -->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

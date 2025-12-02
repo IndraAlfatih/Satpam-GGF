@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EREPORTQCPP"
+        tools:targetApi="31">
+        <activity
+            android:name=".e_formpengamatan.z_satpam.LembarMutasi"
+            android:exported="false" />
+        <activity
+            android:name=".k_historylocation.HistoryLocationHasil"
+            android:exported="false" />
+        <activity
+            android:name=".k_historylocation.HistoryLocation_Listhasil"
+            android:exported="false" />
+        <activity
+            android:name=".k_historylocation.HistoryLocation_Form"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:usesCleartextTraffic="true" -->
+        <!-- android:networkSecurityConfig="@xml/network_security_config" -->
+        <!-- android:name=".h_dashboard.inventori" -->
+        <!-- android:exported="false" -->
+        <!-- android:theme="@style/Theme.EREPORTQCPP" /> -->
+        <activity
+            android:name=".e_formpengamatan.potensicrown.FormPengamatanPotensiCrown"
+            android:exported="false" />
+        <activity
+            android:name=".percobaan"
+            android:exported="false" />
+        <activity
+            android:name=".e_formpengamatan.subsoiler.FormPengamatanSubsoil"
+            android:exported="false" />
+        <activity
+            android:name=".mandor.spk.SpkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".d_hasilpengamatan.hasilPengamatanOffline.HasilPengamatanOfflineActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.tanamsingkong.FormPengamatanTanamSingkong"
+            android:exported="false" />
+        <activity
+            android:name=".e_formpengamatan.stekpanjang.FormPengamatanSingkongStekPanjang"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.boom.FormPengamatanBoomMixer"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.kebersihanpanen.FormPengamatanKebersihanPanen"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.adukanbahan.FormPengamatanAdukanBahanDilokasi"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.stekpendek.FormPengamatanSingkongStekPendek"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.tidakterseset.FormPengamatanBonggolTidakTerseset"
+            android:exported="false" />
+        <activity
+            android:name=".d_hasilpengamatan.Coba"
+            android:exported="false" />
+        <activity
+            android:name=".c_home.home_leader2"
+            android:exported="false" />
+        <activity
+            android:name=".c_home.home_pengamat2"
+            android:exported="false" />
+        <activity
+            android:name=".c_home.home_mandor2"
+            android:exported="false" />
+        <activity
+            android:name=".c_home.home_leader"
+            android:exported="false" />
+        <activity
+            android:name=".rencana_kerja.RencanaKerja"
+            android:exported="false" />
+        <activity
+            android:name=".e_formpengamatan.tanam.FormPengamatanTanam"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.jumlahbaris.FormPengamatanJumlahBaris"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.dropbibit.FormPengamatanDropBibit"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.transport.FormPengamatanTransport"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.phtanah.FormPengamatanPhTanah"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.kebersihanbonggol.FormPengamatanKebersihanBonggol"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.jalansaluran.FormPengamatanJalanSaluran"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.pooldipping.FormPengamatanPoolDipping"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.petikbibit.FormPengamatanPetikBibit"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.ridger.FormPengamatanRidger"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.finishing.FormPengamatanFinishing"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.bajak.FormPengamatanBajak"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.chopper.FormPengamatanChopper"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.sesetbonggol.FormPengamatanSesetBonggol"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".j_realisasi.j_realisasi_"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".i_notify.i_notify_1"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" /> <!-- <activity -->
+        <!-- android:name=".d_hasilpengamatan.d_6_hasilpengamatan_singkong.d_6_tanamsingkong_1" -->
+        <!-- android:exported="false" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <!-- <activity -->
+        <!-- android:name=".d_hasilpengamatan.d_6_hasilpengamatan_singkong.d_6_bibitpendek_1" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".d_hasilpengamatan.d_6_hasilpengamatan_singkong.d_6_bibitpanjang_2" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".d_hasilpengamatan.d_6_hasilpengamatan_singkong.d_6_bibitpanjang_1" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".d_hasilpengamatan.d_1_hasilpengamatan_list.percobaan" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".d_hasilpengamatan.d_5_hasilpengamatan_bonggol.d_5_sesetbonggol_1" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".d_hasilpengamatan.d_4_hasilpengamatan_perawatandanboom.d_4_boomspray_1" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".d_hasilpengamatan.d_4_hasilpengamatan_perawatandanboom.d_4_kebersihanpanen_2" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".d_hasilpengamatan.d_4_hasilpengamatan_perawatandanboom.d_4_gudangmixer_1" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".d_hasilpengamatan.d_5_hasilpengamatan_bonggol.d_5_tidakterseset_2" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".d_hasilpengamatan.d_5_hasilpengamatan_bonggol.d_5_tidakterseset_1" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".d_hasilpengamatan.d_4_hasilpengamatan_perawatandanboom.d_4_adukanbahandilokasi_2" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".d_hasilpengamatan.d_4_hasilpengamatan_perawatandanboom.d_4_adukanbahandilokasi_1" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".d_hasilpengamatan.d_2_hasilpengamatan_lahan.mandor.HasilPengamatanActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".e_formpengamatan.e_4_formpengamatan_boomspray.e_4_kebersihanpanen_3" -->
+        <!-- android:exported="false" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <!-- <activity -->
+        <!-- android:name=".e_formpengamatan.e_4_formpengamatan_boomspray.e_4_kebersihanpanen_2" -->
+        <!-- android:exported="false" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <!-- <activity -->
+        <!-- android:name=".e_formpengamatan.e_4_formpengamatan_boomspray.e_4_kebersihanpanen_1" -->
+        <!-- android:exported="false" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <!-- <activity -->
+        <!-- android:name=".e_formpengamatan.e_4_formpengamatan_boomspray.e_4_boomspray_3" -->
+        <!-- android:exported="false" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <!-- <activity -->
+        <!-- android:name=".e_formpengamatan.e_4_formpengamatan_boomspray.e_4_boomspray_2" -->
+        <!-- android:exported="false" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <!-- <activity -->
+        <!-- android:name=".e_formpengamatan.e_4_formpengamatan_boomspray.e_4_boomspray_1" -->
+        <!-- android:exported="false" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <!-- <activity -->
+        <!-- android:name=".e_formpengamatan.e_4_formpengamatan_boomspray.e_4_adukanbahanlokasi_1" -->
+        <!-- android:exported="false" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <!-- <activity -->
+        <!-- android:name=".e_formpengamatan.e_4_formpengamatan_boomspray.e_4_adukanbahanlokasi_3" -->
+        <!-- android:exported="false" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <!-- <activity -->
+        <!-- android:name=".e_formpengamatan.e_4_formpengamatan_boomspray.e_4_adukanbahanlokasi_2" -->
+        <!-- android:exported="false" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <activity
+            android:name=".h_dashboard.h_dashboard"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".g_website.g_website"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".e_formpengamatan.e_4_formpengamatan_boomspray.e_4_gudangmixer_3" -->
+        <!-- android:exported="false" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <activity
+            android:name=".e_formpengamatan.gudangmixer.FormPengamatanGudangMixer"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" /> <!-- <activity -->
+        <!-- android:name=".e_formpengamatan.e_4_formpengamatan_boomspray.e_4_gudangmixer_2" -->
+        <!-- android:exported="false" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <!-- <activity -->
+        <!-- android:name=".e_formpengamatan.e_4_formpengamatan_boomspray.e_4_gudangmixer_1" -->
+        <!-- android:exported="false" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <activity
+            android:name=".e_formpengamatan.e_1_formpengamatan_list.e_1_list_singkong"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.e_1_formpengamatan_list.e_1_list_bonggol"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.e_1_formpengamatan_list.e_1_list_perawatanpanen"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.e_1_formpengamatan_list.e_1_list_bibittanam"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.e_1_formpengamatan_list.e_1_list_lahan"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".e_formpengamatan.e_1_formpengamatan_list.e_1_formpengamatanlist"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".f_rencanakerja.f_formrencanakerja"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".f_rencanakerja.f_listrencanakerja"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".d_hasilpengamatan.d_1_hasilpengamatan_list.d_1_hasilpengamatan_2"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".b_account.b_3_profil"
+            android:exported="false" />
+        <activity
+            android:name=".b_account.b_1_register"
+            android:exported="false" />
+        <activity
+            android:name=".d_hasilpengamatan.d_1_hasilpengamatan_list.d_1_hasilpengamatan_1"
+            android:exported="false" />
+        <activity
+            android:name=".c_home.c_1_home"
+            android:exported="false" />
+        <activity
+            android:name=".b_account.b_2_login"
+            android:exported="false" />
+        <activity
+            android:name=".a_getstarted.a_2_getstarted"
+            android:exported="false" />
+        <activity
+            android:name=".a_getstarted.a_1_splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

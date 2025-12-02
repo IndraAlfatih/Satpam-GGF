@@ -1,0 +1,1637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgorange3"
+    tools:context=".c_home.c_1_home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/bgcoba"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="50dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo_white" />
+
+
+                <LinearLayout
+                    android:id="@+id/ln1"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageView6"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    tools:ignore="MissingConstraints">
+
+                    <!-- Linear Layout for Profile Content -->
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:id="@+id/linierprofile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <!-- Inner Content -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginEnd="20dp"
+                                android:visibility="gone"
+                                android:background="@drawable/prfll" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/mNama"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Indra Yulianto"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:shadowColor="#7C61FE"
+                                    android:shadowDx="0"
+                                    android:shadowDy="0"
+                                    android:shadowRadius="10"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/mRole"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mandor"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:shadowColor="#7C61FE"
+                                    android:shadowDx="0"
+                                    android:shadowDy="0"
+                                    android:shadowRadius="10"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/versi_apps"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:shadowColor="#7C61FE"
+                                    android:shadowDx="0"
+                                    android:shadowDy="0"
+                                    android:shadowRadius="10"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Logout Layout Positioned to the Right -->
+                    <LinearLayout
+                        android:id="@+id/layoutlogout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|end"
+                        android:orientation="vertical"
+                        android:layout_gravity="end">
+
+                        <Button
+                            android:id="@+id/mBtnLogout"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/btnlogout"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Logout"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:shadowColor="#1AE8FE"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="20"
+                            android:textSize="16sp" />
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln2"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ln1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    tools:ignore="MissingConstraints">
+
+
+                    <!-- Linear Layout for Profile Content -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bgwhite"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/fpengamatan"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bgorange3"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="5dp"
+                                android:src="@drawable/icon_form_pengamatan" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#4850E2"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="Form\nInput"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:id="@+id/hasilpengamatan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bgorange3"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="5dp"
+                                android:src="@drawable/icon_hasil" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#4047FE"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="Hasil\nInput"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/hasilpengamatanOffline"
+                            android:background="@drawable/bgorange3"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="5dp"
+                                android:src="@drawable/nosinyal" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#4850E2"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="Mode\nOffline"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <!-- GAK DIPAKE -->
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bgwhite"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/frencanakerja"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bgorange"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="10dp"
+                                android:src="@drawable/icon_form_pengamatan" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#c77710"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="Form Pengamatan"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:id="@+id/realisasikerja"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bgorange"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="10dp"
+                                android:src="@drawable/icon_hasil" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#c77710"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="Hasil Pengamatan"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/registertk"
+                            android:orientation="vertical"
+                            android:background="@drawable/bgorange"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="10dp"
+                                android:src="@drawable/nosinyal" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#c77710"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="Mode\nOffline"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <!-- GAK DIPAKE -->
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bgwhite"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/notify"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bgorange"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="10dp"
+                                android:src="@drawable/icon_form_pengamatan" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#c77710"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="Form Pengamatan"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bgorange"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="10dp"
+                                android:src="@drawable/icon_hasil" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#c77710"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="Hasil Pengamatan"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bgorange"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="10dp"
+                                android:src="@drawable/nosinyal" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#c77710"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="Mode\nOffline"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln3"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ln2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    tools:ignore="MissingConstraints">
+
+                    <!-- Linear Layout for Profile Content -->
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bgwhite"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Satu Sistem "
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Seribu Informasi Kualitas"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ln3"
+                    tools:ignore="MissingConstraints">
+
+                    <!-- Linear Layout for Profile Content -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bgbanner"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:id="@+id/txt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="24dp"
+                                android:text="Bersatu Kita Kuat Bersama Kita Hebat\nKinerja Tinggi Untuk Keamanan Bersama"
+                                android:textColor="@color/white"
+                                android:textAlignment="center"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ln5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ln4"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:weightSum="2"
+                    tools:ignore="MissingConstraints">
+
+                    <!-- Linear Layout for Profile Content -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/website"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bgwhite"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/webico" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#3B608C"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="One Stop\nInformation"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/dashboard"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bgwhite"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/dashboardico" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#3B608C"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="OSI\nObservation"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/inventori"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bgwhite"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/inventory" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#3B608C"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="OSI\nInventory"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <!-- Linear Layout for Profile Content -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/cost"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bgwhite"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/cost" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#3B608C"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="OSI\nCost Control"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/internalev"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bgwhite"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/eval" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#3B608C"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="OSI\nInternal Ev"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ssk"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bgwhite"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/ssk" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#3B608C"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="OSI\nSSK"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <!-- Linear Layout for Profile Content -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/permintaanbarang"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bgwhite"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="5dp"
+                                android:src="@drawable/barang2" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#3B608C"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="Permintaan\nBarang"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/histori"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bgwhite"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/historiico" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#3B608C"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="Histori\nLokasi"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/asisstant"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bgwhite"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/qassist" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#3B608C"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="QC\nAssistant"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <!-- Linear Layout for Profile Content -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/formssk"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bgwhite"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="5dp"
+                                android:src="@drawable/permintaanico" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#3B608C"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="Form\nSSK"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/fms"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bgwhite"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/fms" />
+
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#3B608C"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="Inspector\nFMS"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bgwhite"
+                            >
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+<!--    <ScrollView-->
+<!--        android:fitsSystemWindows="true"-->
+<!--        android:scrollbars="none"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ln_image1"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.497"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                >-->
+
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView3"-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/logo"-->
+<!--                    tools:ignore="MissingConstraints" />-->
+
+<!--            </LinearLayout>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/linear3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/ln_image1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                &lt;!&ndash; Profile Tab &ndash;&gt;-->
+<!--                <LinearLayout-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:background="@drawable/my_gradient_drawable6">-->
+
+<!--                    &lt;!&ndash; Linear Layout for Profile Content &ndash;&gt;-->
+<!--                    <LinearLayout-->
+<!--                        android:padding="10dp"-->
+<!--                        android:id="@+id/linierprofile"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        &lt;!&ndash; Inner Content &ndash;&gt;-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:gravity="center_vertical">-->
+
+<!--                            <View-->
+<!--                                android:id="@+id/view2"-->
+<!--                                android:layout_width="60dp"-->
+<!--                                android:layout_height="60dp"-->
+<!--                                android:layout_marginEnd="20dp"-->
+<!--                                android:background="@drawable/prfll" />-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:orientation="vertical"-->
+<!--                                android:gravity="center_vertical">-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/mNama"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="Indra Yulianto"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="18sp"-->
+<!--                                    android:textStyle="bold" />-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/mRole"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="Mandor"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="14sp" />-->
+<!--                            </LinearLayout>-->
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+
+<!--                    &lt;!&ndash; Logout Layout Positioned to the Right &ndash;&gt;-->
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/layoutlogout"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center_vertical|end"-->
+<!--                        android:padding="10dp"-->
+<!--                        android:layout_gravity="end">-->
+
+<!--                        <Button-->
+<!--                            android:id="@+id/mBtnLogout"-->
+<!--                            android:layout_width="50dp"-->
+<!--                            android:layout_height="50dp"-->
+<!--                            android:background="@drawable/logout"-->
+<!--                            android:layout_gravity="center"/>-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--                &lt;!&ndash;Big Text&ndash;&gt;-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:layout_marginBottom="10dp">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Hello, "-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="22sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Selamat Datang!"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="22sp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--                &lt;!&ndash;Options&ndash;&gt;-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:layout_marginBottom="10dp">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="5dp"-->
+<!--                        android:layout_marginRight="5dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/frencanakerja"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="120dp"-->
+<!--                                android:background="@drawable/my_gradient_drawable3"-->
+<!--                                android:minHeight="100dp"-->
+<!--                                android:padding="10dp">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="60dp"-->
+<!--                                    android:layout_height="60dp"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentTop="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:padding="3dp"-->
+<!--                                    android:src="@drawable/icon_form_rencanakerja" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="100dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textAlignment="center"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:layout_alignParentBottom="true"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="14sp"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:text="Rencana Kerja"-->
+<!--                                    />-->
+
+<!--                            </RelativeLayout>-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/realisasikerja"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="120dp"-->
+<!--                                android:background="@drawable/my_gradient_drawableabu"-->
+<!--                                android:minHeight="100dp"-->
+<!--                                android:padding="10dp">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="60dp"-->
+<!--                                    android:layout_height="60dp"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentTop="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:padding="3dp"-->
+<!--                                    android:src="@drawable/realblack" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="100dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textAlignment="center"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:layout_alignParentBottom="true"-->
+<!--                                    android:text="Realisasi Kerja"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="14sp"-->
+<!--                                    android:textStyle="bold" />-->
+
+
+<!--                            </RelativeLayout>-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/website"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="120dp"-->
+<!--                                android:background="@drawable/my_gradient_drawableabu"-->
+<!--                                android:minHeight="100dp"-->
+<!--                                android:padding="10dp">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="60dp"-->
+<!--                                    android:layout_height="60dp"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentTop="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:padding="3dp"-->
+<!--                                    android:src="@drawable/webblack" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="100dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textAlignment="center"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:layout_alignParentBottom="true"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="14sp"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:text="Website"-->
+<!--                                    />-->
+
+
+<!--                            </RelativeLayout>-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/hasilpengamatan"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="120dp"-->
+<!--                                android:background="@drawable/my_gradient_drawable10"-->
+<!--                                android:minHeight="100dp"-->
+<!--                                android:padding="10dp">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="60dp"-->
+<!--                                    android:layout_height="60dp"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentTop="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:padding="3dp"-->
+<!--                                    android:src="@drawable/icon_hasil" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="100dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textAlignment="center"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:layout_alignParentBottom="true"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="14sp"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:text="Hasil Pengamatan"-->
+<!--                                    />-->
+
+
+<!--                            </RelativeLayout>-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/hasilpengamatanOffline"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="120dp"-->
+<!--                                android:background="@drawable/my_gradient_drawable11"-->
+<!--                                android:minHeight="100dp"-->
+<!--                                android:padding="10dp">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="60dp"-->
+<!--                                    android:layout_height="60dp"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentTop="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:padding="3dp"-->
+<!--                                    android:src="@drawable/nosinyal" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="100dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textAlignment="center"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:layout_alignParentBottom="true"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="14sp"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:text="Hasil Pengamatan Offline"-->
+<!--                                    />-->
+
+
+<!--                            </RelativeLayout>-->
+<!--                        </LinearLayout>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="5dp"-->
+<!--                        android:layout_marginRight="5dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/fpengamatan"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="120dp"-->
+<!--                                android:background="@drawable/my_gradient_drawable"-->
+<!--                                android:minHeight="100dp"-->
+<!--                                android:padding="10dp">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="60dp"-->
+<!--                                    android:layout_height="60dp"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentTop="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:padding="3dp"-->
+<!--                                    android:src="@drawable/icon_form_pengamatan" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="100dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textAlignment="center"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:layout_alignParentBottom="true"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="14sp"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:text="Form Pengamatan"-->
+<!--                                    />-->
+
+
+<!--                            </RelativeLayout>-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/registertk"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="120dp"-->
+<!--                                android:background="@drawable/my_gradient_drawableabu"-->
+<!--                                android:minHeight="100dp"-->
+<!--                                android:padding="10dp">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="60dp"-->
+<!--                                    android:layout_height="60dp"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentTop="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:padding="3dp"-->
+<!--                                    android:src="@drawable/lokasiblack" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="100dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textAlignment="center"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:layout_alignParentBottom="true"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="14sp"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:text="Monitoring Lokasi TK"-->
+<!--                                    />-->
+
+
+<!--                            </RelativeLayout>-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/dashboard"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="120dp"-->
+<!--                                android:background="@drawable/my_gradient_drawableabu"-->
+<!--                                android:minHeight="100dp"-->
+<!--                                android:padding="10dp">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="60dp"-->
+<!--                                    android:layout_height="60dp"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentTop="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:padding="3dp"-->
+<!--                                    android:src="@drawable/dashboardblack" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="100dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textAlignment="center"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:layout_alignParentBottom="true"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="14sp"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:text="Dashboard"-->
+<!--                                    />-->
+
+
+<!--                            </RelativeLayout>-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/notify"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="120dp"-->
+<!--                                android:background="@drawable/my_gradient_drawableabu"-->
+<!--                                android:minHeight="100dp"-->
+<!--                                android:padding="10dp">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="60dp"-->
+<!--                                    android:layout_height="60dp"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentTop="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:padding="3dp"-->
+<!--                                    android:src="@drawable/notifabu" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="100dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textAlignment="center"-->
+<!--                                    android:layout_alignParentStart="true"-->
+<!--                                    android:layout_alignParentEnd="true"-->
+<!--                                    android:layout_alignParentBottom="true"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="14sp"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:text="Notifikasi"-->
+<!--                                    />-->
+
+
+<!--                            </RelativeLayout>-->
+<!--                        </LinearLayout>-->
+
+
+
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </ScrollView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

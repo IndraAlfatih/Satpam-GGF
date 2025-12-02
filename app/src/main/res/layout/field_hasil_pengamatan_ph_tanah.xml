@@ -1,0 +1,75 @@
+<TableLayout
+    android:id="@+id/mTableLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:stretchColumns="1">
+
+    <!-- Table Header Row -->
+<!--    <TableRow-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#CCCCCC"-->
+<!--        android:padding="8dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Plot"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="16sp"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:text="pH"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="16sp"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Status"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="16sp"/>-->
+<!--    </TableRow>-->
+
+    <!-- Sample Data Row 1 -->
+<!--    <TableRow-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="8dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/mPlot"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:text="40"-->
+<!--            android:textSize="14sp"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/mPh"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:text="10"-->
+<!--            android:textSize="14sp"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/mStatus"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Ready"-->
+<!--            android:textSize="14sp"/>-->
+<!--    </TableRow>-->
+
+    <!-- Sample Data Row 2 (Repeat this for additional rows) -->
+
+
+</TableLayout>
