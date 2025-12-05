@@ -32,6 +32,7 @@ import com.ggf.qcpp.e_formpengamatan.ridger.FormPengamatanRidger;
 import com.ggf.qcpp.e_formpengamatan.ridger.model.RidgerModel;
 import com.ggf.qcpp.e_formpengamatan.subsoiler.FormPengamatanSubsoil;
 import com.ggf.qcpp.e_formpengamatan.subsoiler.model.SubsoilerModel;
+import com.ggf.qcpp.e_formpengamatan.z_satpam.LembarMutasi;
 import com.ggf.qcpp.utils.GsonHelper;
 
 public class e_1_list_lahan extends AppCompatActivity {
@@ -70,7 +71,7 @@ public class e_1_list_lahan extends AppCompatActivity {
                 App.getPref().getString(Prefs.PREF_STORE_PROFILE, ""),
                 new LoginResponse()
         );
-        //fungsi tombol chopper
+        //fungsi tombol mutasi
         btnchopper = findViewById(R.id.Chopper);
         btnchopper.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,7 +96,7 @@ public class e_1_list_lahan extends AppCompatActivity {
 //                mand.setNama("yanto");
 //                mandor.setVERIFIED_MANDOR(mand);
 //                model.setVERIFIED(mandor);
-                Intent gochopper = new Intent(e_1_list_lahan.this, FormPengamatanChopper.class);
+                Intent gochopper = new Intent(e_1_list_lahan.this, LembarMutasi.class);
                 gochopper.putExtra("model", model);
                 startActivity(gochopper);
             }
