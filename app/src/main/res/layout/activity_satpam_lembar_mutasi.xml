@@ -172,6 +172,18 @@
 
                         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/mUsername"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Indra Yulianto"
+                            android:textSize="14sp"
+                            android:padding="12dp"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            />
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -235,7 +247,8 @@
                                 android:background="@drawable/bg_input_edit"
                                 android:clickable="true"
                                 android:focusable="false"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                />
                         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -324,10 +337,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mNama1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -353,6 +367,7 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mIndeks1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
@@ -392,10 +407,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mJabatan1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -419,10 +435,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mKet1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -478,10 +495,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mNama2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -507,6 +525,7 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mIndeks2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
@@ -546,10 +565,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mJabatan2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -573,10 +593,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mKet2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -632,10 +653,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mNama3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -649,8 +671,6 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
-
-
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -661,6 +681,7 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mIndeks3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
@@ -700,10 +721,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mJabatan3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -727,10 +749,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mKet3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -786,10 +809,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mNama4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -815,6 +839,7 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mIndeks4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
@@ -854,10 +879,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mJabatan4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -881,10 +907,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mKet4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -940,10 +967,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mNama5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -969,6 +997,7 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mIndeks5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
@@ -1008,10 +1037,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mJabatan5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -1035,10 +1065,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mKet5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -1094,10 +1125,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mNama6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -1123,6 +1155,7 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mIndeks6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
@@ -1162,10 +1195,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mJabatan6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -1189,10 +1223,11 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
+                                android:id="@+id/mKet6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
-                                android:inputType="numberDecimal"
+                                android:inputType="textCapCharacters"
                                 android:textSize="14sp"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -1373,7 +1408,7 @@
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                             <EditText
-                                android:id="@+id/mKet"
+                                android:id="@+id/mKeterangan"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/bg_input_edit"
@@ -1432,7 +1467,7 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                         <EditText
-                            android:id="@+id/mketerangan"
+                            android:id="@+id/mKeterangann"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/bg_input_edit"

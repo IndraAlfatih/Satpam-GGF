@@ -5,6 +5,7 @@ import android.util.Log;
 import com.ggf.qcpp.App;
 import com.ggf.qcpp.Prefs;
 import com.ggf.qcpp.e_formpengamatan.bajak.model.BajakModel;
+import com.ggf.qcpp.e_formpengamatan.z_satpam.model.SatpamModel;
 import com.ggf.qcpp.network.NetworkService;
 import com.ggf.qcpp.network.RestService;
 import com.ggf.qcpp.utils.CommonResponse;
@@ -41,7 +42,7 @@ public class FormPengamatanLembarMutasiPresenter {
         App.getPref().put(Prefs.PREF_IS_LOGEDIN, true);
     }
 
-    void createPengamatan(BajakModel model) {
+    void createPengamatan(SatpamModel model) {
         System.out.println(model);
         OkHttpClient okHttpClient = new OkHttpClient.Builder().addInterceptor(chain -> {
             Request original = chain.request();
@@ -55,7 +56,7 @@ public class FormPengamatanLembarMutasiPresenter {
             return chain.proceed(request);
         }).build();
         view.showLoadingIndicator();
-        restService.create(NetworkService.class).pengamatanBajak(model)
+        restService.create(NetworkService.class).pengamatanSatpam(model)
                 .enqueue(new Callback<CommonResponse>() {
                     @Override
                     public void onResponse(retrofit2.Call<CommonResponse> call, Response<CommonResponse> CommonRespon) {
@@ -65,6 +66,24 @@ public class FormPengamatanLembarMutasiPresenter {
                             view.onCreateSuccess(CommonRespon.body().getRm());
                         else
                             view.onCreateFailed(CommonRespon.body().getRm());
+
+//                        Log.d("API_URL", call.request().url().toString());
+//                        Log.d("API_CODE", String.valueOf(response.code()));
+//                        Log.d("API_BODY", new Gson().toJson(response.body()));
+//
+//                        if (response.isSuccessful() && response.body() != null) {
+//
+//                            if (Boolean.TRUE.equals(response.body().getSuccess())) {
+//                                view.onCreateSuccess(response.body().getRm());
+//                            } else {
+//                                view.onCreateFailed(response.body().getRm());
+//                            }
+//
+//                        } else {
+//                            view.onCreateFailed(
+//                                    "Upload gagal. Code: " + response.code()
+//                            );
+//                        }
 
                     }
 

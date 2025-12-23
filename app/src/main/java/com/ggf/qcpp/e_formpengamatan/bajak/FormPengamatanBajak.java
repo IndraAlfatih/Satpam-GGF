@@ -97,6 +97,7 @@ public class FormPengamatanBajak extends AppCompatActivity implements View.OnCli
 
     @BindView(R.id.mLine)
     EditText mLine;
+
     @BindView(R.id.mPlot)
     EditText mPlot;
     @BindView(R.id.mketerangan)
@@ -276,11 +277,11 @@ public class FormPengamatanBajak extends AppCompatActivity implements View.OnCli
         mJenisImplement.setText("");
 
         // Kosongkan data di memory
-        dataPlot.clear();
-        dataSample.clear();
+        if (dataPlot != null) dataPlot.clear();
+        if (dataSample != null) dataSample.clear();dataPlot.clear();
 
         // Kosongkan container sample di UI
-        containerPlotData.removeAllViews();
+        if (containerPlotData != null) containerPlotData.removeAllViews();
 
 
         // Reset model juga
@@ -667,6 +668,7 @@ public class FormPengamatanBajak extends AppCompatActivity implements View.OnCli
 //            plotModel.setSAMPLE(dataSample);
             model.setLOKASI(mLokasi.getText().toString());
             model.setWILAYAH(autoWilayah.getText().toString());
+
             model.setDATA(dataPlot);
             Log.d("datanyanih", new Gson().toJson(model));
             presenter.createPengamatan(model);
@@ -746,7 +748,7 @@ public class FormPengamatanBajak extends AppCompatActivity implements View.OnCli
 
     private static final String[] automusim2 = new String[]{"Musim Kering", "Musim Basah"};
 
-    private static final String[] statuspengamatan2 = new String[]{"Inprocess", "Crhosscheck"};
+    private static final String[] statuspengamatan2 = new String[]{"Inprocess", "Crosscheck"};
 
     private static final String[] autoJenisBajak2 = new String[]{"Bajak Dangkal", "Bajak Sedang", "Bajak Dalam"};
 

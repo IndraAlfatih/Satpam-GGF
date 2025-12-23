@@ -12,9 +12,7 @@ public class PlotModel {
     @SerializedName("SAMPLE")
     public List<SampleModel> SAMPLE;
 
-    public String getPLOT() {
-        return PLOT;
-    }
+    public String getPLOT() { return PLOT; }
 
     public void setPLOT(String PLOT) {
         this.PLOT = PLOT;
@@ -29,4 +27,7 @@ public class PlotModel {
     }
 
 
+    public String getPlot() { return PLOT; }
+
+    public void setPlot(String plot) { PLOT = plot; }
 }

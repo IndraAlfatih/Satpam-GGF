@@ -132,7 +132,7 @@
                 <!-- _______________________________________________________________________________ -->
 
                 <LinearLayout
-                    android:id="@+id/Chopper"
+                    android:id="@+id/mutasi"
                     android:layout_marginStart="12dp"
                     android:layout_marginEnd="12dp"
                     android:layout_width="match_parent"

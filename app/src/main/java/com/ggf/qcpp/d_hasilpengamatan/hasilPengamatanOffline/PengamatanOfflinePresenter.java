@@ -7,6 +7,7 @@ import com.ggf.qcpp.Prefs;
 import com.ggf.qcpp.d_hasilpengamatan.hasilPengamatanOffline.model.OfflineModel;
 import com.ggf.qcpp.e_formpengamatan.adukanbahan.model.AdukanBahanDilokasiModel;
 import com.ggf.qcpp.e_formpengamatan.bajak.model.BajakModel;
+import com.ggf.qcpp.e_formpengamatan.z_satpam.model.SatpamModel;
 import com.ggf.qcpp.e_formpengamatan.chopper.model.ChopperModel;
 import com.ggf.qcpp.e_formpengamatan.dropbibit.IFormPengamatanDropBibitView;
 import com.ggf.qcpp.e_formpengamatan.dropbibit.model.DropBibitModel;
@@ -91,6 +92,35 @@ public class PengamatanOfflinePresenter {
         }).build();
         view.showLoadingIndicator();
         restService.create(NetworkService.class).pengamatanBajak(model)
+                .enqueue(new Callback<CommonResponse>() {
+                    @Override
+                    public void onResponse(retrofit2.Call<CommonResponse> call, Response<CommonResponse> CommonRespon) {
+                        view.hideLoadingIndicator();
+                        view.onCreateSuccess(CommonRespon.body().getRm());
+//
+                    }
+
+                    @Override
+                    public void onFailure(retrofit2.Call<CommonResponse> call, Throwable t) {
+                        view.hideLoadingIndicator();
+                        view.onNetworkError("Anda tidak mempunyai akses internet", new Gson().toJson(model));
+                    }
+                });
+    }
+
+    void Satpam(SatpamModel model) {
+        System.out.println(model);
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().addInterceptor(chain -> {
+            Request original = chain.request();
+            Request request = original.newBuilder()
+                    .header("Content-Type", "application/json")
+                    .method(original.method(), original.body())
+                    .build();
+
+            return chain.proceed(request);
+        }).build();
+        view.showLoadingIndicator();
+        restService.create(NetworkService.class).pengamatanSatpam(model)
                 .enqueue(new Callback<CommonResponse>() {
                     @Override
                     public void onResponse(retrofit2.Call<CommonResponse> call, Response<CommonResponse> CommonRespon) {

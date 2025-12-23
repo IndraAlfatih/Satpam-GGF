@@ -8,6 +8,7 @@ import com.ggf.qcpp.b_account.model.UserModel;
 import com.ggf.qcpp.d_hasilpengamatan.d_2_hasilpengamatan_lahan.mandor.model.HasilPengamatanResponse;
 import com.ggf.qcpp.e_formpengamatan.adukanbahan.model.AdukanBahanDilokasiModel;
 import com.ggf.qcpp.e_formpengamatan.bajak.model.BajakModel;
+import com.ggf.qcpp.e_formpengamatan.z_satpam.model.SatpamModel;
 import com.ggf.qcpp.e_formpengamatan.boom.model.BoomMixerModel;
 import com.ggf.qcpp.e_formpengamatan.chopper.model.ChopperModel;
 import com.ggf.qcpp.e_formpengamatan.dropbibit.model.DropBibitModel;
@@ -56,6 +57,9 @@ public interface NetworkService {
 
     @POST("postPengamatan")
     Call<CommonResponse> pengamatanBajak(@Body BajakModel model);
+
+    @POST("postLembarMutasi")
+    Call<CommonResponse> pengamatanSatpam(@Body SatpamModel model);
 
     @POST("postPengamatan")
     Call<CommonResponse> pengamatanSubsoil(@Body SubsoilerModel model);
@@ -138,7 +142,6 @@ public interface NetworkService {
 
     @POST("filterPengamatan")
     Call<NotifyResponse> getPengamatanFilter(@Body JsonObject paramObject);
-
 
     @POST("updatePengamatan/{id}")
     Call<CommonResponse> onVerified(@Path("id") String id, @Body PengamatanModel model);

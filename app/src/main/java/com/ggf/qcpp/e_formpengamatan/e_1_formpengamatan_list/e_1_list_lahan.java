@@ -20,23 +20,22 @@ import com.ggf.qcpp.R;
 import com.ggf.qcpp.b_account.model.LoginResponse;
 import com.ggf.qcpp.e_formpengamatan.bajak.FormPengamatanBajak;
 import com.ggf.qcpp.e_formpengamatan.bajak.model.BajakModel;
-import com.ggf.qcpp.e_formpengamatan.chopper.FormPengamatanChopper;
-import com.ggf.qcpp.e_formpengamatan.chopper.model.ChopperModel;
+import com.ggf.qcpp.e_formpengamatan.subsoiler.FormPengamatanSubsoil;
+import com.ggf.qcpp.e_formpengamatan.z_satpam.LembarMutasi;
+import com.ggf.qcpp.e_formpengamatan.z_satpam.model.SatpamModel;
+
 import com.ggf.qcpp.e_formpengamatan.finishing.FormPengamatanFinishing;
 import com.ggf.qcpp.e_formpengamatan.finishing.model.FinishingModel;
-import com.ggf.qcpp.e_formpengamatan.kebersihanbonggol.FormPengamatanKebersihanBonggol;
-import com.ggf.qcpp.e_formpengamatan.kebersihanbonggol.model.KebersihanBonggolModel;
-import com.ggf.qcpp.e_formpengamatan.phtanah.FormPengamatanPhTanah;
-import com.ggf.qcpp.e_formpengamatan.phtanah.model.PhtanahModel;
-import com.ggf.qcpp.e_formpengamatan.ridger.FormPengamatanRidger;
-import com.ggf.qcpp.e_formpengamatan.ridger.model.RidgerModel;
-import com.ggf.qcpp.e_formpengamatan.subsoiler.FormPengamatanSubsoil;
 import com.ggf.qcpp.e_formpengamatan.subsoiler.model.SubsoilerModel;
 import com.ggf.qcpp.utils.GsonHelper;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class e_1_list_lahan extends AppCompatActivity {
     LoginResponse mProfile ;
-    LinearLayout buttonBack,finishing, btnchopper, btnbajak, btnagregat, btnridger, btnkebersihanbonggol, btnjalansaluran, btnphtanah, btnbajaksingkong,btnsubsoiler;
+    LinearLayout buttonBack,finishing, btnmutasi, btnbajak, btnagregat, btnridger, btnkebersihanbonggol, btnjalansaluran, btnphtanah, btnbajaksingkong,btnsubsoiler;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -70,16 +69,43 @@ public class e_1_list_lahan extends AppCompatActivity {
                 App.getPref().getString(Prefs.PREF_STORE_PROFILE, ""),
                 new LoginResponse()
         );
+<<<<<<< Updated upstream
         //fungsi tombol chopper
         btnchopper = findViewById(R.id.Chopper);
         btnchopper.setOnClickListener(new View.OnClickListener() {
+=======
+
+        //fungsi tombol mutasi satpam
+        btnmutasi = findViewById(R.id.mutasi);
+        btnmutasi.setOnClickListener(new View.OnClickListener() {
+>>>>>>> Stashed changes
             @Override
             public void onClick(View view) {
-                ChopperModel model = new ChopperModel();
-                ChopperModel.verified mandor = model. new verified();
-                ChopperModel.verified.verified_by mand = mandor. new verified_by();
+                Intent gomutasi = new Intent(e_1_list_lahan.this, LembarMutasi.class);
+
+                // BUAT MODEL BARU UNTUK DIKIRIM
+                SatpamModel model = new SatpamModel();
+
+                SimpleDateFormat dateFormat =
+                        new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());
+                SimpleDateFormat timeFormat =
+                        new SimpleDateFormat("HH:mm", Locale.getDefault());
+
+                // Isi beberapa data awal yang sudah diketahui
+                model.setAKTIVITAS_POST("POST/JAGA"); //
+                model.setSHIFT("SHIFT 1/2/3");
+                model.setLOKASI("E552");
+                model.setTANGGAL_MUTASI(dateFormat.format(new Date()));
+                model.setJAM_KEGIATAN(timeFormat.format(new Date()));
+
+//                model.setTANGGAL_MUTASI("-");
+//                model.setJAM_KEGIATAN("-");
+                // Anda bisa mengisi data lain jika perlu
+
+                model.setDATA(null);
 
 
+<<<<<<< Updated upstream
                 model.setNO_LINE("-");
                 model.setNO_UNIT_IMPLEMENT("-");
                 model.setLOKASI("-");
@@ -98,9 +124,15 @@ public class e_1_list_lahan extends AppCompatActivity {
                 Intent gochopper = new Intent(e_1_list_lahan.this, FormPengamatanChopper.class);
                 gochopper.putExtra("model", model);
                 startActivity(gochopper);
+=======
+                // KIRIM MODEL KE LEMBAR MUTASI
+                gomutasi.putExtra("model", model);
+                startActivity(gomutasi);
+>>>>>>> Stashed changes
             }
         });
 
+//        --------------------------------------------------------------
         btnsubsoiler = findViewById(R.id.SubSoiler);
         btnsubsoiler.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,7 +140,6 @@ public class e_1_list_lahan extends AppCompatActivity {
                 SubsoilerModel model = new SubsoilerModel();
                 SubsoilerModel.verified mandor = model. new verified();
                 SubsoilerModel.verified.verified_by mand = mandor. new verified_by();
-
 
                 model.setNO_LINE("-");
                 model.setNO_UNIT_IMPLEMENT("-");
@@ -122,42 +153,19 @@ public class e_1_list_lahan extends AppCompatActivity {
                 model.setPG(mProfile.getData().getUser().getPg());
                 model.setWILAYAH("-");
                 model.setSTATUS_PENGAMATAN("-");
-//                mand.setNama("yanto");
-//                mandor.setVERIFIED_MANDOR(mand);
-//                model.setVERIFIED(mandor);
+                mand.setNama("yanto");
+                mandor.setVERIFIED_MANDOR(mand);
+                model.setVERIFIED(mandor);
                 Intent gochopper = new Intent(e_1_list_lahan.this, FormPengamatanSubsoil.class);
                 gochopper.putExtra("model", model);
                 startActivity(gochopper);
             }
         });
-        //--------------------------------------------------------------------------------------
 
-        //fungsi tombol pembajakan
-        btnbajak = findViewById(R.id.Pembajakan);
-        btnbajak.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                BajakModel model = new BajakModel();
-                BajakModel.verified mandor = model. new verified();
-                BajakModel.verified.verified_by mand = mandor. new verified_by();
+        //----------------------------------------------------------------------------------------------
 
-                model.setNO_LINE("-");
-                model.setNO_UNIT_IMPLEMENT("-");
-                model.setLOKASI("-");
-                model.setKATEGORI("bajak");
-                model.setNO_SPK(generateSpk(model.getKATEGORI()));
-                model.setLUAS_NETTO("-");
-                model.setUSERNAME( mProfile.getData().getUser().getEmail());
-                model.setPG(mProfile.getData().getUser().getPg());
-                model.setWILAYAH("-");
-                model.setSTATUS_PENGAMATAN("-");
-//                mandor.setVERIFIED_MANDOR(mand);
-//                model.setVERIFIED(mandor);
-                Intent gobajak = new Intent(e_1_list_lahan.this, FormPengamatanBajak.class);
-                gobajak.putExtra("model", model);
-                startActivity(gobajak);
-            }
-        });
+
+
         //--------------------------------------------------------------------------------------
 
         //fungsi tombol pembajakan
